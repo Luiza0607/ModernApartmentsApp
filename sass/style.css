@@ -1,0 +1,391 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: #fff;
+}
+
+html {
+  scroll-padding-top: 74px;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-shadow: 1px 1px 20px #6a89cc;
+}
+
+.navbar {
+  text-transform: uppercase;
+  transition: background-color 0.6s;
+  z-index: 5;
+}
+.navbar .navbar-toggler {
+  padding: 10px 20px;
+}
+.navbar .nav-link,
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link.show,
+.navbar .navbar-toggler {
+  color: #6a89cc;
+  font-weight: 700;
+  transition: color 0.9s;
+}
+.navbar .nav-link:hover, .navbar .nav-link.active:hover {
+  color: #fff;
+}
+.navbar .navbar-toggler {
+  font-size: 40px;
+}
+.navbar .navbar-brand {
+  color: #6a89cc;
+  letter-spacing: 2px;
+}
+
+.dropdown-menu {
+  background-color: transparent;
+}
+.dropdown-menu .dropdown-menu a:hover {
+  background-color: transparent;
+}
+
+.hero-img {
+  position: relative;
+  background-image: url("../image/big-view.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.hero-img .hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -3;
+}
+
+.hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.hero-text h1 {
+  font-size: 0;
+  font-family: "Qwitcher Grypen", cursive;
+  color: #6a89cc;
+}
+.hero-text h1 span {
+  display: inline-block;
+  font-size: 250px;
+  animation: rotate-heading 2s 0.8s forwards;
+  opacity: 0;
+}
+.hero-text span:nth-child(2) {
+  animation-delay: 1s;
+}
+.hero-text span:nth-child(3) {
+  animation-delay: 1.2s;
+}
+.hero-text span:nth-child(4) {
+  animation-delay: 1.4s;
+}
+.hero-text span:nth-child(5) {
+  animation-delay: 1.6s;
+}
+.hero-text span:nth-child(6) {
+  animation-delay: 1.8s;
+}
+.hero-text span:nth-child(7) {
+  animation-delay: 2s;
+}
+.hero-text span:nth-child(8) {
+  animation-delay: 2.2s;
+}
+.hero-text span:nth-child(9) {
+  animation-delay: 2.4s;
+}
+.hero-text span:nth-child(10) {
+  animation-delay: 2.6s;
+}
+@keyframes rotate-heading {
+  from {
+    transform: rotateY(90deg);
+    filter: blur(8px);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.hero-text p {
+  font-size: 125px;
+  font-family: "Qwitcher Grypen", cursive;
+  color: #4a69bd;
+  margin-left: 500px;
+}
+
+.fa-chevron-down {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%);
+  font-size: 40px;
+  color: antiquewhite;
+}
+
+.aboutus i {
+  margin-top: 20px;
+  font-size: 40px;
+  color: #6a89cc;
+}
+.aboutus .aboutus-card-title {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-family: "Lobster", cursive;
+  letter-spacing: 2px;
+}
+.aboutus .aboutus-card-text {
+  font-size: 17px;
+}
+.aboutus .aboutus-hover {
+  transition: c 0.5s;
+}
+.aboutus .aboutus-hover:hover {
+  color: #1e3799;
+}
+
+.apartments {
+  background-color: rgb(89, 131, 252);
+  background-image: linear-gradient(90deg, rgb(89, 131, 252) 0%, rgb(41, 53, 86) 50%);
+}
+.apartments .col {
+  cursor: pointer;
+}
+.apartments .section-title {
+  text-shadow: 1px 1px 10px #fff;
+  font-size: 80px;
+  font-family: "Qwitcher Grypen", cursive;
+  text-transform: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.apartment-card .section-title {
+  font-family: "Qwitcher Grypen", cursive;
+  text-transform: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.apartment-card .apart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  font-size: 60px;
+}
+.apartment-card .card-body {
+  color: #0c2461;
+  text-align: center;
+  text-transform: uppercase;
+  transition: color 0.5s;
+}
+.apartment-card .card-body:hover {
+  color: rgb(228, 25, 25);
+}
+
+.prices {
+  background-color: rgb(89, 131, 252);
+  background-image: linear-gradient(90deg, rgb(41, 53, 86) 0%, rgb(89, 131, 252) 50%);
+}
+.prices .price-box {
+  margin: 20px;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+.prices .price-box .price-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #6a89cc;
+  font-weight: 700;
+}
+.prices .price-box i {
+  font-size: 24px;
+}
+.prices .price-box .btn {
+  font-size: 25px;
+  border: 0.1px solid #000000;
+  border-radius: 8px;
+}
+.prices .price-box .btn::before, .prices .price-box .btn::after {
+  display: block;
+  position: absolute;
+  content: "";
+  transition: all 0.5s;
+  z-index: 1;
+}
+.prices .price-box .book {
+  border: none;
+  transition: 0.5s;
+}
+.prices .price-box .book:hover {
+  box-shadow: 2px 3px 0 0 rgb(89, 131, 252), inset 11px 6px 10px rgba(0, 0, 0, 0.3);
+}
+.prices .price-box .price-tag {
+  font-family: "Lobster", cursive;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.achievements-list {
+  padding: 20px 0;
+}
+.achievements-list i {
+  padding: 10px;
+  font-size: 40px;
+  color: #6a89cc;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.achievements-list .achievement-number {
+  font-size: 30px;
+  font-weight: 700;
+}
+.achievements-list .achievement-text {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.contact-list {
+  position: relative;
+  background-image: url("../image/big-view2.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.contact-list .contact-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -3;
+}
+.contact-list .section-title {
+  font-family: "Qwitcher Grypen", cursive;
+  font-size: 80px;
+  color: #fff;
+  text-transform: none;
+}
+.contact-list .contact-us {
+  color: #fff;
+}
+.contact-list .contact-item {
+  margin: 30px 0;
+}
+.contact-list h3 {
+  font-size: 80px;
+  font-family: "Qwitcher Grypen", cursive;
+}
+.contact-list p {
+  font-size: 20px;
+}
+.contact-list p i {
+  font-size: 30px;
+}
+.contact-list a {
+  color: #fff;
+  margin: 10px;
+  font-size: 40px;
+}
+.contact-list a:hover {
+  color: #6a89cc;
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    font-size: 15px;
+  }
+  .navbar .navbar-toggler {
+    padding: 0;
+  }
+  .navbar .navbar-brand {
+    font-size: 15px;
+  }
+  .hero-text h1 {
+    display: flex;
+    font-size: 0;
+  }
+  .hero-text h1 span {
+    display: inline-block;
+    font-size: 90px;
+    animation: rotate-heading 2s 0.8s forwards;
+    opacity: 0;
+  }
+  .hero-text p {
+    font-size: 45px;
+    margin-left: 100px;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  .navbar .navbar-toggler {
+    padding: 0;
+  }
+  .hero-text h1 {
+    display: flex;
+    font-size: 0;
+  }
+  .hero-text h1 span {
+    display: inline-block;
+    font-size: 140px;
+    animation: rotate-heading 2s 0.8s forwards;
+    opacity: 0;
+  }
+  .hero-text p {
+    font-size: 75px;
+    margin-left: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .navbar .navbar-toggler {
+    padding: 0;
+  }
+  .hero-text h1 {
+    display: flex;
+    font-size: 0;
+  }
+  .hero-text h1 span {
+    display: inline-block;
+    font-size: 200px;
+    animation: rotate-heading 2s 0.8s forwards;
+    opacity: 0;
+  }
+  .hero-text p {
+    font-size: 100px;
+    margin-left: 190px;
+  }
+}
+@media (min-width: 992) {
+  html {
+    scroll-padding-top: 72px;
+  }
+}/*# sourceMappingURL=style.css.map */

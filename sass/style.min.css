@@ -1,0 +1,1 @@
+@use './colors' as c;*{box-sizing:border-box;margin:0;padding:0}body{background-color:#c6cfdb}.navbar{text-transform:uppercase}.navbar .nav-link,.navbar .navbar-nav .nav-link.active,.navbar .navbar-nav .nav-link.show,.navbar .navbar-toggler{@in : rgb(104, 102, 221)}.navbar .navbar-brand{color:#6195c4}.navbar .nav-link:focus,.navbar .nav-link:hover{color:#6195c4}
