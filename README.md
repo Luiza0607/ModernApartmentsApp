@@ -16,4 +16,4 @@ Project is created with:
  
 
 ## 🌐
-https://modernapartmentsapp.luiza0607.repl.co
+https://replit.com/@Luiza0607/ModernApartmentsApp
